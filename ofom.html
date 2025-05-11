@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>母亲节快乐！</title>
+    <script src="/static/3dxzmm/OFF.js"></script>
+    <style>
+    
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            perspective: 1000px;
+            background-image: url('https://dy.dw0.cn/uploads/20240805/735d64b123c5fb60a9668a8c7bbe55d2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, 0%);
+            transform-style: preserve-3d;
+            cursor: grab;
+            transform-origin: center center;
+        }
+        
+        .message {
+            position: absolute;
+            font-size: 22px;
+            opacity: 1;
+            cursor: grab;
+            transition: transform 0.3s ease-out, color 2s ease;
+            transform-style: preserve-3d;
+            color: #fe84c1;
+            text-shadow: 0 0 60px rgba(255, 255, 255, 1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <video id="background-video" autoplay muted loop playsinline preload x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline>
+        <source id="video" src="" type="video/mp4">
+        您的浏览器不支持视频标签。
+    </video>
+
+    <script type="text/javascript">
+
+	const imgEnum = "LOVE"
+	
+
+
+		const renderImg = () => {
+// 			const video = document.getElementById('src');
+			const divId=document.getElementById('video')
+			switch (imgEnum) {
+				
+				case '红色爱心':
+					divId.src = "https://txmov2.a.kwimgs.com/upic/2024/05/08/11/BMjAyNDA1MDgxMTQ3MjBfMzAyOTc4ODMzNF8xMzE4NzA2NDcxMzJfMF8z_b_B154839b05f89ba0ef9ee25a3d83558cd.mp4"
+				// 	divId.style.background="#88a7ea"
+					
+					break;
+				
+				case '粉色爱心':
+					divId.src = "https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIyMDdfMzAyOTc4ODMzNF8xMzE4NzI4MDcyNDVfMF8z_b_B9c2427ae093cdbb9922763dfed1a6f8a.mp4"
+				// 	divId.style.background="#88a7ea"
+					
+					break;
+				case '心律爱心':
+					divId.src = "https://txmov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIxMDZfMzAyOTc4ODMzNF8xMzE4NzI3MzY3MjZfMF8z_b_Bab0c9f555f5ae84a96b11f2d93e18afa.mp4"
+				// 	divId.style.background="#000"
+					break;
+	            case '粉色跳动心':
+					divId.src = "https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIyMjRfMzAyOTc4ODMzNF8xMzE4NzI4MjY3NzZfMF8z_b_B5299b21697c19c9dc0786fb5cc0e992c.mp4"
+				// 	divId.style.background="#000"
+					break;
+				 case '心律跳动':
+					divId.src = "https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIxMjBfMzAyOTc4ODMzNF8xMzE4NzI3NTI2NjFfMF8z_b_B80b76c9e3d9f20210b41bcb1734bd3c7.mp4"
+				// 	divId.style.background="#000"
+					break;
+						 case '英文爱心':
+					divId.src = "https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIyNDFfMzAyOTc4ODMzNF8xMzE4NzI4NDY0MzBfMF8z_b_B6ecc1cfdb63ef3a7047d1e45f0677473.mp4"
+				// 	divId.style.background="#000"
+					break;
+	 case '粉紫色爱心':
+					divId.src = "https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIxNTFfMzAyOTc4ODMzNF8xMzE4NzI3ODc1NzlfMF8z_b_B7cfb41013f3568ec98e7e5f675479bb0.mp4"
+				// 	divId.style.background="#000"
+					break;
+						 case '旋转爱心':
+					divId.src = "https://txmov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIxMzRfMzAyOTc4ODMzNF8xMzE4NzI3Njg0OTBfMF8z_b_B70850307bf61f9c912240e03689afcd5.mp4"
+				// 	divId.style.background="#000"
+					break;
+							 case '紫色爱心':
+					divId.src = "https://txmov2.a.kwimgs.com/upic/2022/11/13/09/BMjAyMjExMTMwOTUyMzdfMjA1Nzk1MjA5MV84ODYwNzcyNjc1NF8xXzM=_b_B1fe79c020db2021d3c0a698b5733c8de.mp4"
+				// 	divId.style.background="#000"
+					break;
+					
+							 case '红蓝爱心':
+					divId.src = "https://txmov2.a.kwimgs.com/upic/2022/11/15/06/BMjAyMjExMTUwNjE4NDhfMjI2NjM3NTkxOF84ODc1MTExOTI3MF8yXzM=_b_Bb0366d4f9d35717bba358dded3517c11.mp4"
+				// 	divId.style.background="#000"
+					break;
+					
+					
+					
+					
+				default:
+					break;
+			}
+		}
+
+		renderImg()
+		
+
+ 				 document.writeln("      <style>");
+document.writeln("    #btn-make {");
+document.writeln("    bottom: -150px;");
+document.writeln("    right: 20px;");
+document.writeln("    background-color: rgba(0,0,0,.3);");
+document.writeln("}");
+document.writeln(".div_btn {");
+document.writeln("    position: fixed;");
+document.writeln("    cursor: pointer;");
+document.writeln("    width: 30px;");
+document.writeln("    height: 30px;");
+document.writeln("    border: 3px solid #fff;");
+document.writeln("    border-radius: 50%;");
+document.writeln("    font-size: 12px;");
+document.writeln("    line-height: 30px;");
+document.writeln("    text-align: center;");
+document.writeln("    z-index: 999;");
+document.writeln("}");
+document.writeln("#div_support {");
+document.writeln("    bottom: 80px;");
+document.writeln("    right: 20px;");
+document.writeln("    background-color: rgba(0,0,0,.3);");
+document.writeln("}");
+document.writeln("");
+document.writeln("</style>");
+document.writeln("            ");
+document.writeln("     <div class=\"div_btn\" id=\"btn-make\">");
+document.writeln("	<a style=\"text-decoration:none; color:#fff\" href=\"//5.dw0.cn\"><span>更多</span></a>");
+document.writeln("</div>");
+
+
+
+		</script>
+
+    <div class="container" id="container"></div>
+
+    <script>
+        document.addEventListener("WeixinJSBridgeReady", function() {
+            document.getElementById("background-video").play();
+            document.getElementById("background-audio").play();
+        }, false);
+
+        // 监听滚动事件
+        window.addEventListener('scroll', function() {
+            const messages = document.getElementsByClassName('message');
+            for (let i = 0; i < messages.length; i++) {
+                const message = messages[i];
+                const rect = message.getBoundingClientRect();
+                if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                    message.parentNode.removeChild(message);
+                }
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const colors = ["#fe84c1", "#ff6347", "#ffbaba", "#b366ff", "#fe84c1"]; // 定义指定颜色数组
+
+            const messages = ["I love you！mom！","你是我的人间四月天","身体安康！","Today is a nice day!","母亲节快乐","LOVE"];
+
+            const container = document.getElementById('container');
+            const numberOfMessages = 25;
+            const fixedSpeed = 3;
+            const minDistance = 60;
+
+            for (let i = 0; i < numberOfMessages; i++) {
+                createMessage();
+            }
+
+            function createMessage() {
+                const messageText = messages[Math.floor(Math.random() * messages.length)];
+                const message = document.createElement('div');
+                message.textContent = messageText;
+                message.className = 'message';
+                container.appendChild(message);
+
+                let attempts = 0;
+                let maxAttempts = 100;
+
+                do {
+                    const randomX = Math.random() * (window.innerWidth - message.offsetWidth);
+                    const randomY = Math.random() * (window.innerHeight - message.offsetHeight);
+                    const randomZ = Math.random() * 500 - 250;
+                    message.style.left = `${randomX}px`;
+                    message.style.top = `${randomY}px`;
+                    message.style.transform = `translateZ(${randomZ}px)`;
+
+                    let isOverlapping = false;
+
+                    const existingMessages = container.getElementsByClassName('message');
+                    for (let j = 0; j < existingMessages.length; j++) {
+                        const existingMessage = existingMessages[j];
+                        if (existingMessage !== message && checkCollision(message, existingMessage)) {
+                            isOverlapping = true;
+                            break;
+                        }
+                    }
+
+                    if (!isOverlapping) {
+                        break;
+                    }
+
+                    attempts++;
+                } while (attempts < maxAttempts);
+
+                const zIndex = Math.floor(Math.random() * 5) + 1;
+                message.style.zIndex = zIndex;
+                animateMessage(message, fixedSpeed);
+
+                let currentColorIndex = 0; // 初始颜色索引
+
+                setInterval(() => {
+                    currentColorIndex = (currentColorIndex + 1) % colors.length; // 循环切换颜色索引
+                    const targetColor = colors[currentColorIndex]; // 获取目标颜色
+                    let step = 0;
+                    const interval = setInterval(() => {
+                        if (step >= 100) {
+                            clearInterval(interval);
+                            message.style.color = targetColor;
+                            message.style.textShadow = `0 0 20px ${targetColor}`; // 同步更新发光颜色和扩散程度
+                            return;
+                        }
+                        step++;
+                        const r1 = parseInt(message.style.color.slice(1, 3), 16);
+                        const g1 = parseInt(message.style.color.slice(3, 5), 16);
+                        const b1 = parseInt(message.style.color.slice(5), 16);
+                        const r2 = parseInt(targetColor.slice(1, 3), 16);
+                        const g2 = parseInt(targetColor.slice(3, 5), 16);
+                        const b2 = parseInt(targetColor.slice(5), 16);
+                        const r = Math.floor(r1 + (r2 - r1) * step / 100);
+                        const g = Math.floor(g1 + (g2 - g1) * step / 100);
+                        const b = Math.floor(b1 + (b2 - b1) * step / 100);
+                        message.style.color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+                        message.style.textShadow = `0 0 20px #${r.toString(16) + g.toString(16) + b.toString(16)}`; // 同步更新发光颜色和扩散程度
+                    }, 20);
+                }, 2000);
+            }
+
+            function checkCollision(el1, el2) {
+                const rect1 = el1.getBoundingClientRect();
+                const rect2 = el2.getBoundingClientRect();
+
+                return !(rect1.right < rect2.left + minDistance ||
+                    rect1.left > rect2.right - minDistance ||
+                    rect1.bottom < rect2.top + minDistance ||
+                    rect1.top > rect2.bottom - minDistance);
+            }
+
+            function animateMessage(message, speed) {
+                function move() {
+                    let currentY = parseFloat(message.style.top);
+                    message.style.top = `${currentY - speed}px`;
+
+                    if (message.offsetTop + message.offsetHeight < 0) {
+                        message.style.top = `${window.innerHeight}px`;
+                    }
+
+                    requestAnimationFrame(move);
+                }
+
+                move();
+            }
+
+            let isDragging = false;
+            let startX, startY;
+            let rotationX = 0,
+                rotationY = 0;
+            const rotationSpeed = 0.4;
+
+            function startDrag(e) {
+                isDragging = true;
+                startX = e.clientX || e.touches[0].clientX;
+                startY = e.clientY || e.touches[0].clientY;
+                container.style.cursor = 'grabbing';
+            }
+
+            function dragMove(e) {
+                if (!isDragging) return;
+                const clientX = e.clientX || e.touches[0].clientX;
+                const clientY = e.clientY || e.touches[0].clientY;
+                const deltaX = clientX - startX;
+                const deltaY = startY - clientY; // 这里修改为 startY - clientY，使上下拖动方向正常
+                rotationX += deltaY * 0.01;
+                rotationY += deltaX * 0.01;
+                container.style.transform = `translate(-50%, 0%) rotateX(${rotationX}rad) rotateY(${rotationY}rad)`;
+                startX = clientX;
+                startY = clientY;
+            }
+
+            function endDrag() {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            }
+
+            container.addEventListener('mousedown', startDrag);
+            document.addEventListener('mousemove', dragMove);
+            document.addEventListener('mouseup', endDrag);
+
+            container.addEventListener('touchstart', startDrag);
+            document.addEventListener('touchmove', dragMove);
+            document.addEventListener('touchend', endDrag);
+        });
+    </script>
+
+
+    <div id="btn">
+        <audio id="audio-player" ref="audio" preload="preload" autoplay="autoplay" loop="loop">
+            <source src="https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/6941683387098876686.mp3" type="audio/mpeg"><!--con10音乐链接-->
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+
+
+<script>
+    let isWeixin = () => {
+        let ua = window.navigator.userAgent.toLowerCase()
+        return;
+        /micromessenger/
+            .test(ua)
+    }
+    // method 自动播放
+    let audioPlayer = (id) => {
+        let audio = document.getElementById(id)
+        if (isWeixin()) {
+            document.addEventListener(
+                'WeixinJSBridgeReady'
+                , () => {
+                    audio.play()
+                }, false);
+
+            // 添加 getNetworkType 的判断原因, 请看问题分析2
+            if (typeof window.
+                WeixinJSBridge
+                ==
+                "object"
+                && typeof window.
+                    WeixinJSBridge
+                    .invoke ==
+                "function"
+            ) {
+                window.
+                    WeixinJSBridge
+                    .invoke(
+                        'getNetworkType'
+                        , {}, () => {
+                            audio.play()
+                        })
+            }
+        } else {
+            // audio.play();
+            let touchPlay = () => {
+                audio.play();
+                document.removeEventListener(
+                    'touchstart'
+                    , touchPlay, false)
+            };
+            if (audio.paused) {
+                document.addEventListener(
+                    'touchstart'
+                    , touchPlay, false)
+            }
+        }
+    }
+    // 使用
+    audioPlayer(
+        'audio-player'
+    );
+
+    var audio = document.getElementById("audio-player");
+    var btn = document.getElementById("btn");
+    var rotateVal = 0;
+
+    var InterVal;     // 定时器
+    // 设置定时器
+    function rotate() {
+        InterVal = setInterval(function () {
+            rotateVal += 4;
+            // 设置旋转属性(顺时针)
+            btn.style.transform = 'rotate(' + rotateVal + 'deg)';
+            // 设置旋转属性(逆时针)
+            //img.style.transform = 'rotate(-' + rotateVal + 'deg)'
+            // 设置旋转时的动画  匀速0.1s
+            btn.style.transition = '0.1s linear'
+        }, 100)
+    }
+    // rotate();
+    btn.onclick = function () {         //点击按钮播放停止
+        if (audio.paused) { //判断当前的状态是否为暂停，若是则点击播放，否则暂停
+            audio.play();
+            rotate()
+        } else {
+            audio.pause();
+            clearInterval(InterVal)
+        }
+    };
+
+</script>
+<script>
+
+		</script>
+
+</body>
+</html>
